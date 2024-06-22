@@ -46,7 +46,9 @@ fontPicker.addEventListener('change', (e)=>{
 })
 
 clear.addEventListener('click', ()=>{
-    ctx.clearRect(0, 0, 800, 400);
+    let flag = confirm("Are you sure you want to clear?");
+    if(flag)
+        ctx.clearRect(0, 0, 800, 400);
 })
 
 save.addEventListener('click', ()=>{
